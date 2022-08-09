@@ -5,7 +5,7 @@ def start_game():
     print ("==========GAME START===========")
     h_points = 0
     c_points = 0
-    while h_points != 3 or c_points != 3:
+    while h_points < 3 and c_points < 3:
         c_choice = rd.choice(["r", "p", "s"])
         h_choice = str(input("press r for rock, p for paper, s for scissors. 3 point to win\nYour choice : "))
         if h_choice == c_choice:
